@@ -74,7 +74,7 @@ main {
 
 
 /* =====================================
-   WEBSITE SECTIONS
+   SECTIONS
 ===================================== */
 
 section {
@@ -92,13 +92,12 @@ section h2 {
 
 
 /* =====================================
-   SKILLS SECTION
+   SKILLS
 ===================================== */
 
 .skills-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     gap: 12px;
     list-style: none;
     padding: 0;
@@ -110,7 +109,6 @@ section h2 {
     padding: 10px 18px;
     border-radius: 20px;
     font-weight: bold;
-    margin-bottom: 0;
 }
 
 
@@ -133,6 +131,11 @@ section h2 {
     padding: 20px;
     border: 1px solid #dbe3ed;
     border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
     transition: transform 0.2s ease,
                 box-shadow 0.2s ease;
 }
@@ -155,6 +158,29 @@ section h2 {
     border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
+    margin-top: 8px;
+}
+
+
+/* =====================================
+   PROJECT LINKS
+===================================== */
+
+.project-link {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 16px;
+    background-color: #173b67;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.project-link:hover {
+    background-color: #315b89;
 }
 
 
@@ -201,7 +227,7 @@ textarea:focus {
 
 
 /* =====================================
-   ABOUT ME GREETING
+   GREETING FEATURE
 ===================================== */
 
 #about input {
@@ -216,7 +242,7 @@ textarea:focus {
 
 
 /* =====================================
-   DAY 11: CONTACT FORM
+   DAY 11 CONTACT FORM
 ===================================== */
 
 #contactForm {
@@ -229,11 +255,6 @@ textarea:focus {
 #contactForm label {
     font-weight: bold;
     color: #173b67;
-}
-
-#contactForm input,
-#contactForm textarea {
-    width: 100%;
 }
 
 #contactForm textarea {
@@ -315,4 +336,3 @@ footer a:hover {
         width: 100%;
     }
 }
-
